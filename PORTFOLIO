@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="codsoft.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NAVITHA MUTHUKUBERAN</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="https://i.pinimg.com/originals/3a/53/39/3a5339ea3b24338c7671968f002f354c.jpg" width="100" height="80">
+                <p>Hello! I am Navitha, a passionate web developer for creating best websites. I have experience in HTML, CSS, JavaScript and more.</p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project.</p>
+                    <img src="project1.jpg" alt="Project Image">
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project.</p>
+                    <img src="project2.jpg" alt="Project Image">
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <a href="resume.pdf" download>Download My Resume</a>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Email: navim@gmail.com</p>
+                <p>Phone: +4476007753</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy;  All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+/* CSS */
+body, h1, h2, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.about img {
+    border-radius: 50%;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills li {
+    background: #e7e7e7;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.skills li:first-child, .skills li:last-child {
+    margin: 0;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.resume a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #23ba28;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.resume a:hover {
+    background: #45a049;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
